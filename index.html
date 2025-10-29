@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>My Portfolio | Cloud Engineer</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav__logo"><a href="#">Welcome To<span> My Portfolio</span>!</a></div>
+  </nav>
+
+  <header>
+    <div class="section__container header__container">
+      <p><span>Hello</span> I'm</p>
+      <h1>Devaprasath</h1>
+      <h2 class="section__title">Cloud <span>Engineer.</span></h2>
+      <div class="about__content">
+        <h2 class="section__title">About <span>Me</span></h2>
+      </div>
+      <p>
+        I am a passionate Cloud Engineer specialized in AWS and DevOps.
+        Skilled in solving complex problems with efficient solutions.
+        Experienced in designing and managing scalable cloud infrastructure.
+        A fast learner with a strong drive for continuous improvement.
+        Adaptable and proactive in embracing new technologies.
+        Committed to delivering high-quality results and driving success
+      </p>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="section__container about__container">
+      <div class="about__image"><img src="assets/about-bg.jpg" alt="about" /></div>
+      <div class="about__content">
+        <h2 class="section__title">Cloud <span>Engineer</span></h2>
+        <p class="section__subtitle">Summary!</p>
+        <p class="about__details">As a Cloud Engineer, I specialize in designing and deploying scalable cloud-based solutions using AWS services.
+          I have hands-on experience working with EC2, S3, Lambda, and DynamoDB, building reliable systems that solve real-world problems.
+          Throughout my journey, I have completed several projects and internships that strengthened my technical skills, teamwork, and problem-solving abilities.
+          My goal is to deliver high-quality cloud solutions that drive success and innovation
+        </p>
+        <div class="extra-about" style="display: none;">
+          <p>Here are more details about my expertise:</p>
+          <ul>
+           <li>Developed an Image Metadata Management System using AWS S3, Lambda, DynamoDB, and EC2, enabling automated metadata extraction</li>
+           <li>Built a Personal Notes Management System utilizing AWS Lambda, DynamoDB, and S3 to store and manage personal notes efficiently</li>
+           <li>Designed and implemented a serverless architecture for an expense tracking system using AWS services</li>
+           <li>Gained hands-on experience in software development and cloud computing during internships at JSW Steel Limited and Senthur Techno Source</li>
+           <li>Published a research paper on "Carbon Footprint Tracker for Indian Coal Mine," proposing a real-time analytics system for emission monitoring</li>
+           <li>Certified in AWS Cloud Practitioner Essentials and Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</li>
+		   <li>Proficient in Java and Python with expertise in AWS services like Lambda, API Gateway, S3, and DynamoDB</li>
+           <li>Strong problem-solving and critical-thinking skills, demonstrated through cloud-based project implementations</li>
+	       <li>Experienced in leadership, teamwork, and technical operations through NCC and industrial training</li>
+           <li>Holds a Junior Grade Typewriting Certification from the Government of Tamil Nadu, showcasing strong documentation skills</li>
+          </ul>
+        </div>
+        <button class="btn" onclick="toggleAbout(this)">More About</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="section__container service__container">
+      <h2 class="section__title"><span>My</span> Skills</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <i class="ri-cloud-line"></i><h4>Cloud Computing</h4>
+          <p>- AWS Services<br>- DevOps(Basics)<br> </p>
+          <div class="extra-skill" style="display: none;"><p> <br> <br> </p></div>
+          <a href="#" class="read__more" onclick="toggleSkill(this); return false;">Read More...</a>
+        </div>
+        <div class="service__card">
+          <i class="ri-code-s-slash-line"></i><h4>Technical Skills</h4>
+          <p>- Java<br>- Python<br> </p>
+          <div class="extra-skill" style="display: none;"><p>- HTML, CSS<br>- Flutter(Basics)<br> </p></div>
+          <a href="#" class="read__more" onclick="toggleSkill(this); return false;">Read More...</a>
+        </div>
+        <div class="service__card">
+          <i class="ri-edit-2-line"></i><h4>Soft Skills</h4>
+          <p>- Problem Solving<br>- Critical Thinking<br> </p>
+          <div class="extra-skill" style="display: none;"><p>- Leadership<br>- Team Work<br> </p></div>
+          <a href="#" class="read__more" onclick="toggleSkill(this); return false;">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certification">
+    <div class="section__container certification__container">
+      <h2 class="section__title"><span>My</span> Certifications</h2>
+      <div class="certification__grid" id="certifications">
+        <div class="certification__card"><img src="assets/certification-1.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">AWS Cloud Foundations</p></div>
+        <div class="certification__card"><img src="assets/certification-2.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">AWS Certified Cloud Practitioner</p></div>
+        <div class="certification__card"><img src="assets/certification-3.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">Cloud Computing</p></div>
+        <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-4.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">Generative AI Fountations</p></div>
+        <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-5.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">AWS Cloud Practitioner Essentials</p></div>
+        <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-6.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">Programming in Java</p></div>
+        <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-7.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">Oracle Cloud Infrastructure 2023</p></div>
+        <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-8.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">RDBMS PostgreSQL Training</p></div>
+	    <div class="certification__card extra-cert" style="display:none;"><img src="assets/certification-10.jpg" alt="certification" onclick="openPopup(this)" /><br><p class="certification__name">Diplamo in Computer Application</p></div>
+	  </div>
+      <div class="view-more-container"><button class="btn view-more-btn" onclick="toggleCertificates()">View More</button></div>
+    </div>
+  </section>
+
+  <div class="popup" id="popup"><span class="close" onclick="closePopup()">&times;</span><img class="popup-content" id="popup-img" /></div>
+
+  <section class="project">
+    <div class="section__container project__container">
+      <h2 class="section__title"><span>My</span> Projects</h2>
+      <div class="project__grid">
+        <div class="project__card">
+          <img src="assets/project-1.jpg" alt="project" onclick="openProjectPopup('https://www.linkedin.com/posts/devaprasath-r_aws-cloudcomputing-serverless-activity-7302240096265678850-ZRpF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHEaGMBhXAZOXoahggCFiAnnYXJ81VotV8')"/><br>
+          <p class="project__name">Image Metadata Management System</p>
+        </div>
+        <div class="project__card">
+          <img src="assets/project-2.jpg" alt="project" onclick="openProjectPopup('https://www.linkedin.com/posts/devaprasath-r_aws-cloudcomputing-python-activity-7304883207642996738-3sU0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHEaGMBhXAZOXoahggCFiAnnYXJ81VotV8')"/><br>
+          <p class="project__name">Personal Notes Management System</p>
+        </div>
+        <div class="project__card">
+          <img src="assets/project-3.png" alt="project" onclick="openProjectPopup('https://www.linkedin.com/posts/devaprasath-r_flutter-firebase-hive-activity-7349485304086482946-BSGe?utm_source=share&utm_medium=member_android&rcm=ACoAAEHEaGMBhXAZOXoahggCFiAnnYXJ81VotV8')"/><br>
+          <p class="project__name">Todo Mobile Application Development</p>
+        </div>
+		<div class="project__card">
+          <img src="assets/project-4.png" alt="project" onclick="openProjectPopup('https://www.linkedin.com/posts/devaprasath-r_aws-cloudcomputing-serverless-activity-7353416563107995650-hSpg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHEaGMBhXAZOXoahggCFiAnnYXJ81VotV8')"/><br>
+          <p class="project__name">Real-Time Disaster Alert System using AWS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="popup" id="projectPopup"><span class="close" onclick="closeProjectPopup()">&times;</span><div class="popup-content"><a href="#" target="_blank" id="linkedin-link" class="btn">View LinkedIn Post</a></div></div>
+
+  <section class="internship">
+    <div class="section__container internship__container">
+      <h2 class="section__title"><span>My</span> Internships</h2>
+      <div class="project__grid">
+        <div class="project__card"><img src="assets/intern1.jpg" alt="Internship 1" onclick="openInternshipPopup(this)" /><br><p class="project__name">JSW Steel Limited</p></div>
+        <div class="project__card"><img src="assets/intern2.jpg" alt="Internship 2" onclick="openInternshipPopup(this)" /><br><p class="project__name">Senthul Techno Source</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="popup" id="internshipPopup"><span class="close" onclick="closeInternshipPopup()">&times;</span><img class="popup-content" id="internship-popup-img" /></div>
+
+  <section class="resume">
+    <div class="section__container resume__container">
+      <h2 class="section__title"><span>My</span> Resume</h2>
+      <div class="resume__content">
+        <p>Click below to download and view my resume.</p>
+        <a href="assets/Devaprasathresume.pdf" target="_blank" download class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__content">
+        <h2 class="section__title">Contact <span>Me!</span></h2>
+        <p class="section__subtitle">If you have any Queries</p>
+        <div class="footer__details"><p>You can reach me through the contact form provided on this website.
+          Simply fill out the form with Your Name, E-mail Address, and Message</p></div>
+        <div class="social__icons">
+          <a href="mailto:devaprasathravichandran@gmail.com" target="_blank" class="icon"><i class="ri-mail-line"></i></a>
+          <a href="https://www.linkedin.com/in/Devaprasath-R" target="_blank" class="icon"><i class="ri-linkedin-fill"></i></a>
+		  <a href="https://github.com/DEVAPRASATH-dp" target="_blank" class="icon"><i class="ri-github-fill"></i></a>
+          <a href="https://www.instagram.com/deva_dp._" target="_blank" class="icon"><i class="ri-instagram-fill"></i></a>
+		  <a href="https://www.facebook.com/devakamesh.devakamesh" target="_blank" class="icon"><i class="ri-facebook-fill"></i></a>
+        </div>
+      </div>
+      <form class="footer__form" action="https://formspree.io/f/movewpeb" method="POST" id="contactForm">
+        <input type="text" name="name" id="name" placeholder="Your Name" pattern="[A-Za-z ]+" title="Only letters and spaces allowed" required>
+        <span class="error-message" id="name-error"></span>
+        
+        <input type="email" name="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" required>
+        <span class="error-message" id="email-error"></span>
+        
+        <input type="tel" name="phone" id="phone" placeholder="Your Phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        <span class="error-message" id="phone-error"></span>
+        
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <span class="error-message" id="message-error"></span>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle "More About" section
+    function toggleAbout(btn) {
+      const aboutSection = btn.closest('.about__content');
+      const extraContent = aboutSection.querySelector('.extra-about');
+      extraContent.style.display = extraContent.style.display === "none" ? "block" : "none";
+      btn.textContent = extraContent.style.display === "block" ? "Show Less" : "More About";
+    }
+
+    // Toggle skills read more/less
+    function toggleSkill(el) {
+      const card = el.closest('.service__card');
+      const extra = card.querySelector('.extra-skill');
+      extra.style.display = extra.style.display === "none" ? "block" : "none";
+      el.textContent = extra.style.display === "block" ? "Read Less..." : "Read More...";
+    }
+
+    // Certification popup functions
+    function openPopup(el) {
+      document.getElementById('popup').style.display = 'flex';
+      document.getElementById('popup-img').src = el.src;
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Toggle certificates view more/less
+    function toggleCertificates() {
+      document.querySelectorAll('.extra-cert').forEach(cert => {
+        cert.style.display = cert.style.display === 'none' ? 'grid' : 'none';
+      });
+      const btn = document.querySelector('.view-more-btn');
+      btn.textContent = btn.textContent === 'View More' ? 'View Less' : 'View More';
+    }
+
+    // Internship popup functions
+    function openInternshipPopup(el) {
+      document.getElementById('internshipPopup').style.display = 'flex';
+      document.getElementById('internship-popup-img').src = el.src;
+    }
+
+    function closeInternshipPopup() {
+      document.getElementById('internshipPopup').style.display = 'none';
+    }
+
+    // Project popup functions
+    function openProjectPopup(link) {
+      const popup = document.getElementById('projectPopup');
+      const linkedinLink = document.getElementById('linkedin-link');
+      linkedinLink.href = link;
+      popup.style.display = 'flex';
+    }
+
+    function closeProjectPopup() {
+      document.getElementById('projectPopup').style.display = 'none';
+    }
+
+    // Form validation
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(event) {
+      let isValid = true;
+      
+      // Name validation
+      const nameInput = document.getElementById('name');
+      const nameError = document.getElementById('name-error');
+      if (!/^[A-Za-z ]+$/.test(nameInput.value.trim())) {
+        nameError.textContent = 'Please enter only letters and spaces';
+        isValid = false;
+      } else {
+        nameError.textContent = '';
+      }
+      
+      // Email validation
+      const emailInput = document.getElementById('email');
+      const emailError = document.getElementById('email-error');
+      if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(emailInput.value.trim())) {
+        emailError.textContent = 'Please enter a valid email address';
+        isValid = false;
+      } else {
+        emailError.textContent = '';
+      }
+      
+      // Phone validation
+      const phoneInput = document.getElementById('phone');
+      const phoneError = document.getElementById('phone-error');
+      if (!/^[0-9]{10}$/.test(phoneInput.value.trim())) {
+        phoneError.textContent = 'Please enter a 10-digit phone number';
+        isValid = false;
+      } else {
+        phoneError.textContent = '';
+      }
+      
+      // Message validation
+      const messageInput = document.getElementById('message');
+      const messageError = document.getElementById('message-error');
+      if (messageInput.value.trim() === '') {
+        messageError.textContent = 'Please enter your message';
+        isValid = false;
+      } else {
+        messageError.textContent = '';
+      }
+      
+      if (!isValid) {
+        event.preventDefault();
+      }
+    });
+
+    // Real-time validation
+    document.getElementById('name').addEventListener('input', function() {
+      this.value = this.value.replace(/[^A-Za-z ]/g, '');
+    });
+
+    document.getElementById('phone').addEventListener('input', function() {
+      this.value = this.value.replace(/\D/g, '').substring(0, 10);
+    });
+  </script>
+</body>
+</html>
